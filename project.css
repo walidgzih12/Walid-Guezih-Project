@@ -1,126 +1,157 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background: #000;
-    color: #fff;
-    font-weight: 500;
-    font-family: Arial, sans-serif;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-image:  url('https://genotipia.com/wp-content/uploads/2020/04/Netflix-Background-prueba-1.jpg');
 
-  .btn {
-    margin-bottom: 5rem;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    background:red;
-    border-radius: 10rem;
-    font-size: 2rem;
-    text-align: center;
-  }
+}
+body {
+  background: #000;
+  color: #fff;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+}
 
-  .btn2 {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 15px;
-    margin: 0;
-    background: #e50914;
-    border-radius: 5px;
-    font-size: 20px;
-    text-align: center;
-  }
-  
-  .btn2:hover {
-    background: #fd1c27;
-  }
+.btn {
+  margin-bottom: 5rem;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  background: red;
+  border-radius: 10px; 
+  font-size: 2rem;
+  text-align: center;
+}
 
-  .inner-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    line-height: 1.25;
-  }
+.btn2 {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 0;
+  background: #e50914;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+}
 
-  .inner-title {
-    font-size: 1.8rem;
-    width: 90%;
-  }
+.btn2:hover {
+  background: #fd1c27;
+}
+input{
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  line-height: 1.25;
+}
 
-  .inner-text {
-    font-size: 2rem;
-    width: 80%;
-  }
-  
-  .email {
-    margin: 3rem;
-  }
+.inner-title {
+  font-size: 2rem;
+  width: 90%;
+  padding-bottom: 10%;
+}
 
-  .adresse {
-    margin: 10px;
-  }
+.inner-text {
+  font-size: 3rem;
+  width: 80%;
+  padding-bottom: 1rem;
+}
 
-  .email.get-started {
-    padding-top: 1rem;
-    display: flex ;
-    height: 80%;
-  }
-  
-  .netflix {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 3rem;
-    position: sticky;
-  }
-  
-  #img1{  
-    width: 300px; ;
-  }
+.email {
+  margin: 3rem;
+}
 
-  .header.inner-container {
-    margin-top: 10rem;
-  }
-  
-  .header .inner-title {
-    width: 50%;
-    text-align: center;
-  }
-  
-  .header .inner-container {
-    margin-top: 10rem;
-  }
-  
-  .header.inner-title {
-    width: 50%;
-    text-align: center;
-  }
-  
-  .header h1 {
-    margin-bottom: 1rem;
-  }
+.adresse {
+  margin: 10px;
+}
 
-  .showcase {
-    border-bottom: 10px solid #333;
-    padding: 2rem 0;
-  }
-  .showcase-container {
-    display: flex;
-    width: 85%;
-    margin: auto;
-  }
-  
-  .showcase-img {
-    position: relative;
-    
-  }
-  
-  .showcase-animation {
-    position: absolute;
-    left: 75px;
-    top: 95px;
-  }
+.email.get-started {
+  padding-top: 1rem;
+  display: flex;
+  height: 80%;
+}
+
+.netflix {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  position: sticky;
+}
+
+#img1 {
+  width: 300px; 
+}
+
+.header.inner-container {
+  margin-top: 10rem;
+}
+
+.header .inner-title {
+  width: 50%;
+  text-align: center;
+}
+
+.header h1 {
+  margin-bottom: 1rem;
+}
+
+.showcase {
+  border-bottom: 10px solid #333;
+  padding: 2rem 0;
+}
+
+.showcase-container {
+  display: flex;
+  width: 85%;
+  margin: auto;
+}
+
+.showcase-img {
+  position: relative;
+}
+
+.showcase-animation {
+  position: absolute;
+  left: 75px;
+  top: 95px;
+}
+
+.downloading {
+  background: #000;
+  width: 60%;
+  height: 125px;
+  position: absolute;
+  top: 335px;
+  right: 300px;
+  border: 5px solid #333;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+}
+
+footer {
+  color: #757575;
+  margin: 3rem auto;
+  width: 70%;
+}
+
+footer.lang {
+  padding: 2rem ;
+  font-weight: 700;
+  cursor: pointer;
+  width: 14%;
+  border: 1px solid #333;
+  border-radius: 0.2rem;
+  font-family: inherit;
+  padding: 1rem;
+  position: relative;
+}

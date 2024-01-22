@@ -18,12 +18,12 @@
         <header class="header">
             <nav class="netflix">
                 <img id="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Original_Netflix_Logo.png/800px-Original_Netflix_Logo.png" alt="" />
-                <button class="btn">Sign In</button>
+                <!-- <button class="btn">Sign In</button> -->
             </nav>
 
             <div class="inner-container">
                 <div class="inner-title">
-                    <h1>Watch All your favorites movies, TV shows, and more.</h1>
+                    <h1>Watch all your favorite movies, TV shows, and more.</h1>
                 </div>
                 <div class="inner-text">
                     <p>Watch anywhere. Cancel anytime.</p>
@@ -34,12 +34,12 @@
                         Ready to watch? Enter your email to create or restart your membership.
                     </p>
                     <div class="get-started">
-                        <input type="text"  class="address" placeholder=" Enter your email address" />
-                        <a href="" class="btn2">Get started <i class=""></i></a>
+                        <input type="text" class="input" placeholder="Enter your email address"  />
+                        <a href="#" class="btn2" onclick=check() href="home.html">Get started <i class=""></i></a>
                     </div>
                 </div>
             </div>
-            
+
         </header>
 
         <section class="showcase">
@@ -61,40 +61,65 @@
             </div>
         </section>
 
-        <script src="project.js"></script>
+        <section class="showcase">
+            <div class="showcase-container case2">
+                <div class="showcase-img">
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="" />
+                    <div class="downloading">
+                        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" alt="" />
+                        <div class="download-text">
+                            <h1>Stranger Things</h1>
+                            <p>Downloading...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <div class="inner-title">
+                        <h1>Download your shows to watch them offline.</h1>
+                    </div>
+                    <div class="inner-text">
+                        <p>Save your favorites easily and always have something to watch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+          <p>Questions? Contact us.</p>
+          <div class="links">
+            <ul>
+              <li>FAQ</li>
+              <li>Help Center</li>
+              <li>Account</li>
+              <li>Media Center</li>
+              <li>Investor Relations</li>
+              <li>Jobs</li>
+              <li>Ways to Watch</li>
+              <li>Terms of Use</li>
+              <li>Privacy</li>
+              <li>Cookie Preferences</li>
+              <li>Corporate Information</li>
+              <li>Contact Us</li>
+              <li>Speed Test</li>
+              <li>Legal Notices</li>
+              <li>Netflix Originals</li>
+            </ul>
+            <div class="language" id="language-btn">
+              <i class="lang"></i> English
+              <i class="fas fa-sort-down lg"></i>
+              <div class="dropdown-list">
+                <ul class="" id="language-dropdown">
+                  <li>中文</li>
+                  <li>English</li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </footer>
+
     </div>
 
-    <section class="showcase">
-      <div class="showcase-container case2">
-        <div class="showcase-img">
-          <img
-            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
-            alt=""
-          />
-          <div class="downloading">
-            <img
-              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"
-              alt=""
-            />
-            <div class="download-text">
-              <h1>Stranger Things</h1>
-              <p>Downloading...</p>
-            </div>
-          </div>
-        </div>
-        <div class="inner-container">
-          <div class="inner-title">
-            <h1>Download your shows to watch them offline.</h1>
-          </div>
-          <div class="inner-text">
-            <p>
-              Save your favorites easily and always have something to watch.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <script src="project.js"></script>
 </body>
 
 </html>

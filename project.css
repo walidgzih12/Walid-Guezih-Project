@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #000;
+    color: #fff;
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+  }
+
+  .btn {
+    margin-bottom: 5rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background:red;
+    border-radius: 10rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .btn2 {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 0;
+    background: #e50914;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .btn2:hover {
+    background: #fd1c27;
+  }
+
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    line-height: 1.25;
+  }
+
+  .inner-title {
+    font-size: 1.8rem;
+    width: 90%;
+  }
+
+  .inner-text {
+    font-size: 2rem;
+    width: 80%;
+  }
+  
+  .email {
+    margin: 3rem;
+  }
+
+  .adresse {
+    margin: 10px;
+  }
+
+  .email.get-started {
+    padding-top: 1rem;
+    display: flex ;
+    height: 80%;
+  }
+  
+  .netflix {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    position: sticky;
+  }
+  
+  #img1{  
+    width: 300px; ;
+  }
+
+  .header.inner-container {
+    margin-top: 10rem;
+  }
+  
+  .header .inner-title {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .header .inner-container {
+    margin-top: 10rem;
+  }
+  
+  .header.inner-title {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin-bottom: 1rem;
+  }
+
+  .showcase {
+    border-bottom: 10px solid #333;
+    padding: 2rem 0;
+  }
+  .showcase-container {
+    display: flex;
+    width: 85%;
+    margin: auto;
+  }
+  
+  .showcase-img {
+    position: relative;
+    
+  }
+  
+  .showcase-animation {
+    position: absolute;
+    left: 75px;
+    top: 95px;
+  }

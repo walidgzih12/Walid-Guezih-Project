@@ -84,20 +84,19 @@ var movies = [
 
 function createMovieCards(array, searchName) {
     var container = document.getElementById('movie-container');
-    container.innerHTML = ''; // Clear existing movie cards
+    container.innerHTML = ''; 
 
     array.forEach(function(movie) {
         if (!searchName || movie.name.toLowerCase().includes(searchName.toLowerCase())) {
             var movieCard = document.createElement('div');
             movieCard.classList.add('movie-card');
 
-            // Create and set poster image
+            
             var poster = document.createElement('img');
             poster.src = movie.pic;
             poster.alt = movie.name + ' Poster';
             poster.classList.add('movie-poster');
 
-            // Create and set movie details
             var title = createMovieDetail('movie-title', movie.name);
             var duration = createMovieDetail('movie-duration', 'Duration: ' + movie.duration);
             var type = createMovieDetail('movie-type', 'Type: ' + movie.type);
@@ -108,7 +107,7 @@ function createMovieCards(array, searchName) {
             var description = createMovieDetail('movie-description', 'Description: ' + movie.description);
             var date = createMovieDetail('movie-date', 'Release Date: ' + movie.date);
 
-            // Append elements to movie card
+            
             movieCard.appendChild(poster);
             movieCard.appendChild(title);
             movieCard.appendChild(duration);
@@ -120,13 +119,13 @@ function createMovieCards(array, searchName) {
             movieCard.appendChild(description);
             movieCard.appendChild(date);
 
-            // Append movie card to container
+            
             container.appendChild(movieCard);
         }
     });
 }
 
-// Helper function to create movie detail element
+
 function createMovieDetail(className, textContent) {
     var detail = document.createElement('div');
     detail.classList.add(className);
@@ -134,14 +133,14 @@ function createMovieDetail(className, textContent) {
     return detail;
 }
 
-// Get the search bar input element
+
 var searchBar = document.querySelector('.search-bar input');
 
-// Add event listener for input event on the search bar
+
 searchBar.addEventListener('input', function() {
     var searchTerm = searchBar.value;
     createMovieCards(movies, searchTerm);
 });
 
-// Call the function with your movie data to initially display all movies
+
 createMovieCards(movies);

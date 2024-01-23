@@ -29,7 +29,7 @@ function check() {
         check = true;
         console.log("welcome home ");
         window.location.href = "home.html";
-        break; // Exit the loop since the email is found
+        break; ///// exit the loop
       }
     }
     if (!check) {

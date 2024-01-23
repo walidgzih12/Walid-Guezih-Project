@@ -82,17 +82,50 @@ var movies = [
 
 ];
 
-function createMovieCards(array) {
+function createMovieCards(array, searchName) {
     var container = document.getElementById('movie-container');
+    container.innerHTML = ''; // Clear existing movie cards
 
-    array.forEach(function(element) {
-        var movieCard = document.createElement('div');
-        movieCard.classList.add('movie-card');
+    array.forEach(function(movie) {
+        if (!searchName || movie.name.toLowerCase().includes(searchName.toLowerCase())) {
+            var movieCard = document.createElement('div');
+            movieCard.classList.add('movie-card');
 
-        // Create and set poster image
-        var poster = document.createElement('img');
-        poster.src = element.pic;
-       
+            // Create and set poster image
+            var poster = document.createElement('img');
+            poster.src = movie.pic;
+            poster.alt = movie.name + ' Poster';
+            poster.classList.add('movie-poster');
+
+            // Create and set movie details
+            var title = createMovieDetail('movie-title', movie.name);
+            var duration = createMovieDetail('movie-duration', 'Duration: ' + movie.duration);
+            var type = createMovieDetail('movie-type', 'Type: ' + movie.type);
+            var genre = createMovieDetail('movie-genre', 'Genre: ' + movie.genre);
+            var director = createMovieDetail('movie-director', 'Director: ' + movie.director);
+            var production = createMovieDetail('movie-production', 'Production: ' + movie.production);
+            var country = createMovieDetail('movie-country', 'Country: ' + movie.country);
+            var description = createMovieDetail('movie-description', 'Description: ' + movie.description);
+            var date = createMovieDetail('movie-date', 'Release Date: ' + movie.date);
+
+            // Append elements to movie card
+            movieCard.appendChild(poster);
+            movieCard.appendChild(title);
+            movieCard.appendChild(duration);
+            movieCard.appendChild(type);
+            movieCard.appendChild(genre);
+            movieCard.appendChild(director);
+            movieCard.appendChild(production);
+            movieCard.appendChild(country);
+            movieCard.appendChild(description);
+            movieCard.appendChild(date);
+
+            // Append movie card to container
+            container.appendChild(movieCard);
+        }
+    });
+}
+
 // Helper function to create movie detail element
 function createMovieDetail(className, textContent) {
     var detail = document.createElement('div');
@@ -100,35 +133,15 @@ function createMovieDetail(className, textContent) {
     detail.textContent = textContent;
     return detail;
 }
-        // Create and set movie details
-        var title = createMovieDetail('movie-title',element.name);
-        var duration = createMovieDetail('movie-duration', 'Duration: ' +element.duration);
-        var type = createMovieDetail('movie-type', 'Type: ' +element.type);
-        var genre = createMovieDetail('movie-genre', 'Genre: ' +element.genre);
-        var director = createMovieDetail('movie-director', 'Director: ' +element.director);
-        var production = createMovieDetail('movie-production', 'Production: ' +element.production);
-        var country = createMovieDetail('movie-country', 'Country: ' +element.country);
-        var description = createMovieDetail('movie-description', 'Description: ' +element.description);
-        var date = createMovieDetail('movie-date', 'Release Date: ' +element.date);
 
-        // Append elements to movie card
-        movieCard.appendChild(poster);
-        movieCard.appendChild(title);
-        movieCard.appendChild(duration);
-        movieCard.appendChild(type);
-        movieCard.appendChild(genre);
-        movieCard.appendChild(director);
-        movieCard.appendChild(production);
-        movieCard.appendChild(country);
-        movieCard.appendChild(description);
-        movieCard.appendChild(date);
+// Get the search bar input element
+var searchBar = document.querySelector('.search-bar input');
 
-        // Append movie card to container
-        container.appendChild(movieCard);
-    });
-}
+// Add event listener for input event on the search bar
+searchBar.addEventListener('input', function() {
+    var searchTerm = searchBar.value;
+    createMovieCards(movies, searchTerm);
+});
 
-
-
-// Call the function with your movie data
+// Call the function with your movie data to initially display all movies
 createMovieCards(movies);

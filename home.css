@@ -18,21 +18,14 @@ body{
 }
 
 .search-bar {
-    display: flex;
-    align-items: center;
+    display: flex; 
+    align-items: center; 
 }
 
 .search-bar input {
     padding: 0.5rem;
-    margin-right: 0.5rem;
-}
-
-.btn {
-    padding: 0.5rem 1rem;
-    background-color: #e50914;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+    width: 30rem; 
+    margin-right: 26rem;
 }
 
 .movie-container {
